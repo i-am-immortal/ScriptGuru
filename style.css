@@ -1,8 +1,9 @@
 * {
   padding: 0;
   margin: 0;
-  border: border-box;
+  box-sizing: border-box;
 }
+
 .navbar {
   height: 60px;
   background-color: #0f1111;
@@ -11,51 +12,63 @@
   align-items: center;
   justify-content: space-evenly;
 }
+
 .navlogo {
   height: 50px;
   width: 100px;
 }
+
 .logo:hover {
   border: 1.5px solid white;
-  animation: normal; /* baad me thik karna h ise */
+  animation: normal;
 }
+
 .logo {
   background-image: url("amazon_logo.png");
   background-size: cover;
-  height: 50px;
+  height: 100%;
   width: 100%;
   border: 1.5px solid transparent;
 }
+
 .deliver {
   color: #cccccc;
   font-size: 0.85rem;
   margin-left: 15px;
 }
+
 .india {
   font-size: 1rem;
   margin: 1px;
 }
+
 .add-icon {
   display: flex;
   align-items: center;
 }
+
 .india {
   margin-left: 3px;
 }
-.fa-solid fa-location-dot {
+
+.fa-solid.fa-location-dot {
   margin-bottom: 1px;
 }
+
 .border:hover {
   border: 1px solid white;
 }
+
 .navSearch {
   display: flex;
   justify-content: space-evenly;
   background-color: pink;
-  width: 620px;
+  width: 100%;
+  max-width: 620px;
   height: 40px;
   border-radius: 5px;
 }
+
 .searchSelect {
   background-color: #f3f3f3;
   width: 50px;
@@ -64,11 +77,13 @@
   border-bottom-left-radius: 5px;
   border: none;
 }
+
 .searchInput {
   width: 100%;
   font-size: 1rem;
   border: none;
 }
+
 .searchIcon {
   width: 45px;
   display: flex;
@@ -80,18 +95,19 @@
   border-bottom-right-radius: 5px;
   color: #0f1111;
 }
+
 span {
   font-size: 0.7rem;
-}
-.AccountOrder {
   font-size: 0.85rem;
   font-weight: 700;
   border: none;
 }
+
 .searchInput:hover {
   border: 2px solid #febd68;
   transition: 0.5s;
 }
+
 .navCart i {
   width: 20px;
   display: flex;
@@ -101,6 +117,7 @@ span {
   font-size: 30px;
   border: none;
 }
+
 .cart {
   border: none;
   margin-left: 4px;
@@ -120,29 +137,33 @@ span {
   padding: 5px;
   justify-content: space-evenly;
 }
+
 .pannelOpt p {
-  width: 400px;
+  width: 100%;
   font-size: 15px;
   display: inline;
   margin-left: 30px;
 }
+
 .pannelOpt {
   margin-left: 20px;
   width: 90%;
   font-size: 15px;
   padding: 5px;
 }
+
 .deals {
   font-size: 0.9rem;
   font-weight: 700;
 }
+
 .heroImg1 {
-  padding: 10px;
   padding: 10px;
   height: 250px;
   width: 100%;
   background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img24/MED/hero/25/s5/MED_PC_TallHero_1500x600._CB583217599_.jpg");
 }
+
 img {
   margin-top: 5px;
   width: 100%;
@@ -150,6 +171,19 @@ img {
   object-fit: cover;
   background-image: url("");
 }
+
 .heroimg {
   margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .navSearch {
+    width: 100%;
+    max-width: none;
+  }
 }
