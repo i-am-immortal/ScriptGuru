@@ -124,7 +124,6 @@ span {
   font-weight: 0.85rem;
   font-size: 700;
 }
-
 .pannel {
   height: 40px;
   display: flex;
@@ -142,7 +141,7 @@ span {
   width: 100%;
   font-size: 15px;
   display: inline;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .pannelOpt {
@@ -150,6 +149,8 @@ span {
   width: 90%;
   font-size: 15px;
   padding: 5px;
+  display: flex;
+  overflow-x: auto;
 }
 
 .deals {
@@ -178,12 +179,21 @@ img {
 
 @media screen and (max-width: 768px) {
   .navbar {
+    display: flex;
+    align-items: center;
     flex-direction: column;
     height: auto;
   }
 
   .navSearch {
-    width: 100%;
+    width: auto;
     max-width: none;
+  }
+  .pannelOpt {
+    flex-wrap: nowrap;
+  }
+
+  .pannelOpt p {
+    white-space: nowrap;
   }
 }
