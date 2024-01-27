@@ -176,13 +176,17 @@ img {
 .heroimg {
   margin-top: 5px;
 }
-
 @media screen and (max-width: 768px) {
   .navbar {
+    /* font-size: .85rem; */
+    width:auto;
+    height: auto;
+    margin-right:5px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     height: auto;
+    overflow-x: auto;
   }
 
   .navSearch {
